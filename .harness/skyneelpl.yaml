@@ -8,7 +8,7 @@ pipeline:
     ci:
       codebase:
         connectorRef: account.Github_OAuth_1789372129452
-        repoName: https://github.com/skylaryan16-netizen/My-Terraform_sky.git
+        repoName: skylaryan16-netizen/My-Terraform_sky
         build: <+input>
   stages:
     - stage:
