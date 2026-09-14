@@ -1,0 +1,35 @@
+pipeline:
+  identifier: Build_skylaryan16_netizen_My_Terraform_sky_1789372213409
+  name: Build My-Terraform_sky
+  orgIdentifier: default
+  projectIdentifier: MyTerraform_sky
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1789372129452
+        repoName: skylaryan16-netizen/My-Terraform_sky
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          caching:
+            enabled: true
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
