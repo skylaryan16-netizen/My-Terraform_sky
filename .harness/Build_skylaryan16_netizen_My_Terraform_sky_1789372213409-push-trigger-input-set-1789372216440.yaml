@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_skylaryan16_netizen_My_Terraform_sky_1789372213409-push-trigger-input-set
+  identifier: Build_skylaryan16_netizen_My_Terraform_sky_1789372213409pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: MyTerraform_sky
+  pipeline:
+    identifier: Build_skylaryan16_netizen_My_Terraform_sky_1789372213409
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
